@@ -211,13 +211,47 @@
               </table>
 
 
+                 <div class="booking-container">
+                <h2>Book an Appointment</h2>
+                <form class="appointment-form">
+                  <form action="#">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe required">
+                    </div>
+              
+                  <!--Service Selection-->
+                  <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service">
+                      <option>Ultrasound</option>
+                      <option>X-RAY</option>
+                      <option>ECG</option>
+                    </select>
+                  </div>
 
-              <form id="appointmentForm">
-                  <label>Name:</label> <input type="text" required>
-                    <label>Date:</label>  <input type="date" required>
-                     <label>Time:</label>  <input type="time" required>
-                <button type="submit">Book Appointment</button>
-              </form>
+                  <div class="row">
+                    <div class="form-group">
+                      <label for="date">Preferred Date</label>
+                      <input type="date" id="date" required>
+                    </div>
+                  </div>
+
+                  <!--Time Slots-->
+                  <div class="section">
+                    <Label>Available Time Slots</Label>
+                    <div class="time-grid">
+                      <button class="time-btn">07:00 AM</button>
+                      <button class="time-btn">11:30 AM</button>
+                      <button class="time-btn active">12:00 PM</button>
+                      <button class="time-btn">12:30 PM</button>
+                      <button class="time-btn">05:00 PM</button>
+                      <button class="time-btn disabled" 06:30 PM></button>
+                      </div>
+                    </div>
+
+                    <button class="confirm-btn">Confirm Booking</button>
+                  </div>
+          
 
 
               <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
