@@ -146,11 +146,77 @@ color: #fff !important;
     color: #555;
 }
 
-.app-form {max-width: 500px margin: 0 auto; padding: 20px;}
-.form-group {margin-bottom: 15px; }
-.form-input {width: 100%; padding: 10px; box-sizing: border-box;} /*box-sizing ensures padding doesn't affect width */
-.row {display: flex; gap: 10px; flex-wrap: wrap; }
-.col {flex: 1 1 200px; } /*stacks on mobile, splits on desktop*/
+
+.booking-container {
+    background: var(--card);
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0 ,0.1);
+}
+
+h2 { margin-top: 0; margin-bottom: 1.5rem; text-align: center;}
+
+.section-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/*Responsive Grid Layout */
+.time-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* Hide the actual time-btn*/
+.time-btn button {
+    position:absolute;
+    opacity: 0;
+}
+
+/* Custom time-btn Styling*/
+.time-btn button {
+    display: block;
+    text-align: center;
+    padding: 12px 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.time-btn button class:checked + button {
+    border-color: var(--primary);
+    background-color: #eef2ff;
+    color: var(--primary);
+    font-weight: bold;
+}
+.time-ntn button:hover {
+    background-color: #f9fafb;
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: var(--primary);
+    color: blue;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.confirm-btn:hover {
+    opacity: 0.9;
 
 
 
