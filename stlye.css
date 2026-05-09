@@ -146,6 +146,12 @@ color: #fff !important;
     color: #555;
 }
 
+.app-form {max-width: 500px margin: 0 auto; padding: 20px;}
+.form-group {margin-bottom: 15px; }
+.form-input {width: 100%; padding: 10px; box-sizing: border-box;} /*box-sizing ensures padding doesn't affect width */
+.row {display: flex; gap: 10px; flex-wrap: wrap; }
+.col {flex: 1 1 200px; } /*stacks on mobile, splits on desktop*/
+
 
 
 
