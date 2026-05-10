@@ -185,7 +185,6 @@ select{
     margin-bottom: 1.5rem;
 }
 
-/* Hide the actual time-btn*/
 .time-btn button {
     position:absolute;
     opacity: 0;
