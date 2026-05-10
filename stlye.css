@@ -84,6 +84,8 @@ color: #fff !important;
 #about{
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-left: 10%;
+    
 }
 #about h1{
     padding: 70px;
@@ -135,6 +137,8 @@ color: #fff !important;
     width: 100%;
     max-width: 300px;
     border-collapse: collapse;
+    margin-left: 20%;
+    
 }
 .opening-hours th {
     text-align: left;
