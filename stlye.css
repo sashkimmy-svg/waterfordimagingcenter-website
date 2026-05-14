@@ -228,15 +228,7 @@ select{
 .confirm-btn:hover {
     opacity: 0.9;
 }
-/* Responsive Tweak: side-by-side on tablets/desktops */
-@media (min-width: 480px) {
-    .appointment-form {
-     grid-template-columns: 1fr 1fr;
-    }
-    .confirm-btn {
-        grid-column: span 2;
-    }
-}
+
 
 
     
