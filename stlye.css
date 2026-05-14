@@ -169,85 +169,62 @@ overflow: hidden;
     color: #555;
 }
 
-
 .booking-container {
-    background: var(--card);
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0 ,0.1);
+    box-shadow: 0 5px 15px aquamarine;
 }
 
-h2 { margin-top: 0; margin-bottom: 1.5rem; text-align: center;}
+.form-group {
+    margin-bottom: 15px;
+}
 
-.section-title {
+label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    color: #6b7280;
+    margin-bottom: 5px;
+    color: aqua;
+    
 }
 
-select{
+select,
+input {
     width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.row .form-group {
+    flex: 1;
+    
+}
+
+button {
+    width: 100px;
     padding: 12px;
-    border:  1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    cursor: pointer;
-
-/*Responsive Grid Layout */
-.time-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-    margin-bottom: 1.5rem;
-}
-
-.time-btn button {
-    position:absolute;
-    opacity: 0;
-}
-
-/* Custom time-btn Styling*/
-.time-btn button {
-    display: block;
-    text-align: center;
-    padding: 12px 10px;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 0.95rem;
-}
-
-.time-btn button class:checked + button {
-    border-color: var(--primary);
-    background-color: #eef2ff;
-    color: var(--primary);
-    font-weight: bold;
-}
-.time-ntn button:hover {
-    background-color: #f9fafb;
-}
-
-.confirm-btn {
-    width: 100%;
-    background-color: var(--primary);
-    color: blue;
-    padding: 14px;
+    background: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
-    transition: opacity 0.2s;
+    transition: 0.3s;
 }
 
-.confirm-btn:hover {
-    opacity: 0.9;
+button:hover {
+    background: #0056b3;
 }
+
+/*Responsive */
+@media (max-width: 600px) {.row
+    {flex-direction: column;
+    }
+}
+
 
 
 
