@@ -180,6 +180,8 @@ overflow: hidden;
 
 .form-group {
     margin-bottom: 15px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 label {
