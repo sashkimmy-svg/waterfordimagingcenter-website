@@ -201,6 +201,7 @@ input {
 .row .form-group {
     flex: 1;
     gap: 10px;
+    margin-top: 15px;
     
 }
 
